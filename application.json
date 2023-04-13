@@ -1,8 +1,12 @@
 {
   "pages": [
     {
-      "id": "Page1",
+      "id": "Customer Ordering",
       "isDefault": true
+    },
+    {
+      "id": "Stock Dashboard",
+      "isDefault": false
     }
   ],
   "viewMode": false,
