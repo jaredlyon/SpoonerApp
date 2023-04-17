@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Delete_Drink_From_Order",
+    "name": "Delete_Order",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web::4000/b/DeleteDrink/{{Drinks_In_Order.selectedRow.DrinkID}}"
+        "url": "web::4000/b/DeleteOrder/{{Order_Id_Input_Delete.text}}"
       },
       "invalids": [],
       "messages": [],
@@ -39,7 +39,7 @@
         }
       ],
       "formData": {
-        "apiContentType": "application/json"
+        "apiContentType": "none"
       }
     },
     "executeOnLoad": false,
@@ -52,14 +52,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Drinks_In_Order.selectedRow.DrinkID"
+      "Order_Id_Input_Delete.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Barista Ordering_Delete_Drink_From_Order",
+  "id": "Barista Ordering_Delete_Order",
   "deleted": false,
-  "gitSyncId": "643d888dbd3fd606db7e66f5_643d9ca857ec6263a92e7c26"
+  "gitSyncId": "643d888dbd3fd606db7e66f5_643da30ae2d8fb468b7d5d28"
 }
