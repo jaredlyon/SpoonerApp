@@ -7,6 +7,10 @@
     {
       "id": "Stock Dashboard",
       "isDefault": false
+    },
+    {
+      "id": "Barista Ordering",
+      "isDefault": false
     }
   ],
   "viewMode": false,
