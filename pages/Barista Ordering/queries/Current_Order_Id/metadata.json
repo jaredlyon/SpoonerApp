@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/b/Order"
+        "url": "web:4000/b/order"
       },
       "invalids": [],
       "messages": [],
@@ -36,7 +36,7 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],

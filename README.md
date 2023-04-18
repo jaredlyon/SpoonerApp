@@ -1,3 +1,12 @@
+## This repository contains two pages that interact with the [SpoonerInv Database](https://github.com/jaredlyon/SpoonerInv):
+
+### Barista Page
+TODO: write useme here
+
+### Manager Page
+TODO: write useme here
+
+
 ![](https://raw.githubusercontent.com/appsmithorg/appsmith/release/static/appsmith_logo_primary.png)
 
 This app is built using Appsmith. Turn any datasource into an internal app in minutes. Appsmith lets you drag-and-drop components to build dashboards, write logic with JavaScript objects and connect to any API, database or GraphQL source.
