@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 880,
+          "bottomRow": 960,
           "containerStyle": "none",
           "snapRows": 69,
           "parentRowSpace": 1,
@@ -1959,7 +1959,11 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 6.0830078125,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
                               "dynamicBindingPathList": [
@@ -1980,6 +1984,7 @@
                               "key": "o47ki0xnak",
                               "labelTextSize": "0.875rem",
                               "isRequired": false,
+                              "onTextChanged": "",
                               "isDeprecated": false,
                               "rightColumn": 43,
                               "dynamicHeight": "FIXED",
@@ -2021,7 +2026,11 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 6.0830078125,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
                               "dynamicBindingPathList": [
@@ -2042,6 +2051,7 @@
                               "key": "o47ki0xnak",
                               "labelTextSize": "0.875rem",
                               "isRequired": false,
+                              "onTextChanged": "{{Get_Order_Price.run()}}",
                               "isDeprecated": false,
                               "rightColumn": 42,
                               "dynamicHeight": "FIXED",
