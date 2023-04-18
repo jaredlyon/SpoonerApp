@@ -36,13 +36,14 @@
                 "group"
               ],
               "topRow": 32,
-              "bottomRow": 88,
+              "bottomRow": 87,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 20.140625,
+              "dynamicTriggerPathList": [],
               "leftColumn": 1,
               "dynamicBindingPathList": [
                 {
@@ -57,7 +58,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 560,
+                  "bottomRow": 550,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -133,8 +134,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 50,
-                      "bottomRow": 54,
+                      "topRow": 49,
+                      "bottomRow": 53,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -167,10 +168,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 50,
+                      "originalTopRow": 49,
                       "disabledWhenInvalid": true,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 54,
+                      "originalBottomRow": 53,
                       "buttonVariant": "PRIMARY",
                       "placement": "CENTER"
                     },
@@ -183,8 +184,8 @@
                       "searchTags": [
                         "dropdown"
                       ],
-                      "topRow": 42,
-                      "bottomRow": 49,
+                      "topRow": 41,
+                      "bottomRow": 48,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "type": "MULTI_SELECT_TREE_WIDGET",
@@ -227,10 +228,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 42,
+                      "originalTopRow": 41,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 49,
+                      "originalBottomRow": 48,
                       "allowClear": false,
                       "minDynamicHeight": 4
                     },
@@ -302,8 +303,8 @@
                       "searchTags": [
                         "range"
                       ],
-                      "topRow": 24,
-                      "bottomRow": 32,
+                      "topRow": 25,
+                      "bottomRow": 33,
                       "parentRowSpace": 10,
                       "labelWidth": "8",
                       "type": "CATEGORY_SLIDER_WIDGET",
@@ -312,7 +313,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 8.26220703125,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 2,
+                      "leftColumn": 3,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -338,7 +339,7 @@
                       "key": "zxsyrhra1c",
                       "labelTextSize": "0.875rem",
                       "isDeprecated": false,
-                      "rightColumn": 59,
+                      "rightColumn": 60,
                       "widgetId": "xjff3ic8j8",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -350,8 +351,8 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 24,
-                      "originalBottomRow": 32,
+                      "originalTopRow": 25,
+                      "originalBottomRow": 33,
                       "showMarksLabel": true
                     },
                     {
@@ -568,7 +569,7 @@
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
               "rightColumn": 27,
-              "dynamicHeight": "AUTO_HEIGHT",
+              "dynamicHeight": "FIXED",
               "widgetId": "7gqze93ncl",
               "minWidth": 450,
               "isVisible": true,
@@ -576,10 +577,8 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 32,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 88,
               "minDynamicHeight": 10
             },
             {
@@ -996,8 +995,8 @@
                           "enableSort": true,
                           "isVisible": true,
                           "isDisabled": false,
-                          "isCellEditable": true,
-                          "isEditable": true,
+                          "isCellEditable": false,
+                          "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "DrinkID",
@@ -1128,7 +1127,7 @@
                     {
                       "boxShadow": "none",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "onSubmit": "{{Get_Drinks_From_Order.run(() => showAlert('Got Order ' + Order_Id_Input_Delete.text,'success'), () => showAlert('Failed to get order ' + Order_Id_Input_Delete.text,'error'))}}",
+                      "onSubmit": "",
                       "topRow": 5,
                       "labelWidth": 5,
                       "type": "INPUT_WIDGET_V2",
@@ -1251,7 +1250,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button3",
-                      "onClick": "{{showModal()}}",
+                      "onClick": "{{showModal('Edit_Order_Modal')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -1709,7 +1708,7 @@
             },
             {
               "boxShadow": "none",
-              "widgetName": "Edit_Order",
+              "widgetName": "Edit_Order_Modal",
               "isCanvas": true,
               "displayName": "Modal",
               "iconSVG": "/static/media/icon.4975978e9a961fb0bfb4e38de7ecc7c5.svg",
@@ -1719,12 +1718,12 @@
                 "notification"
               ],
               "topRow": 3,
-              "bottomRow": 54,
+              "bottomRow": 43,
               "parentRowSpace": 10,
               "type": "MODAL_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
-              "minHeight": 540,
+              "minHeight": 430,
               "animateLoading": true,
               "parentColumnSpace": 8.26220703125,
               "leftColumn": 33,
@@ -1738,7 +1737,7 @@
                   "widgetName": "Canvas4",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 540,
+                  "bottomRow": 430,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -1751,8 +1750,8 @@
                   "children": [
                     {
                       "boxShadow": "none",
-                      "widgetName": "IconButton2",
-                      "onClick": "{{closeModal('Modal1')}}",
+                      "widgetName": "Close_Form",
+                      "onClick": "{{closeModal('Edit_Order_Modal')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Icon Button",
                       "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
@@ -1765,6 +1764,11 @@
                       "type": "ICON_BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 58,
                       "dynamicBindingPathList": [
                         {
@@ -1806,6 +1810,7 @@
                       "animateLoading": true,
                       "overflow": "NONE",
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
@@ -1820,7 +1825,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Modal Title",
+                      "text": "Edit Order",
                       "key": "nty7w27azw",
                       "isDeprecated": false,
                       "rightColumn": 41,
@@ -1842,106 +1847,9 @@
                       "minDynamicHeight": 4
                     },
                     {
-                      "resetFormOnClick": false,
-                      "boxShadow": "none",
-                      "widgetName": "Button1",
-                      "onClick": "{{closeModal('Modal1')}}",
-                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "displayName": "Button",
-                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                      "searchTags": [
-                        "click",
-                        "submit"
-                      ],
-                      "topRow": 48,
-                      "bottomRow": 52,
-                      "type": "BUTTON_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "leftColumn": 27,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "buttonColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "text": "Close",
-                      "isDisabled": false,
-                      "key": "fveib73jlu",
-                      "isDeprecated": false,
-                      "rightColumn": 39,
-                      "isDefaultClickDisabled": true,
-                      "widgetId": "u857m8lygp",
-                      "buttonStyle": "PRIMARY",
-                      "minWidth": 120,
-                      "isVisible": true,
-                      "recaptchaType": "V3",
-                      "version": 1,
-                      "parentId": "40e093az59",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "responsiveBehavior": "hug",
-                      "originalTopRow": 48,
-                      "disabledWhenInvalid": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 52,
-                      "buttonVariant": "SECONDARY",
-                      "placement": "CENTER"
-                    },
-                    {
-                      "resetFormOnClick": false,
-                      "boxShadow": "none",
-                      "widgetName": "Button2",
-                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "displayName": "Button",
-                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                      "searchTags": [
-                        "click",
-                        "submit"
-                      ],
-                      "topRow": 48,
-                      "bottomRow": 52,
-                      "type": "BUTTON_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "leftColumn": 41,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "buttonColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "text": "Confirm",
-                      "isDisabled": false,
-                      "key": "fveib73jlu",
-                      "isDeprecated": false,
-                      "rightColumn": 59,
-                      "isDefaultClickDisabled": true,
-                      "widgetId": "vdlovaepx8",
-                      "buttonStyle": "PRIMARY_BUTTON",
-                      "minWidth": 120,
-                      "isVisible": true,
-                      "recaptchaType": "V3",
-                      "version": 1,
-                      "parentId": "40e093az59",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "responsiveBehavior": "hug",
-                      "originalTopRow": 48,
-                      "disabledWhenInvalid": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 52,
-                      "buttonVariant": "PRIMARY",
-                      "placement": "CENTER"
-                    },
-                    {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "borderColor": "#E0DEDE",
-                      "widgetName": "Form1",
+                      "widgetName": "Edit_Order",
                       "isCanvas": true,
                       "displayName": "Form",
                       "iconSVG": "/static/media/icon.ea3e08d130e59c56867ae40114c10eed.svg",
@@ -1949,7 +1857,7 @@
                         "group"
                       ],
                       "topRow": 5,
-                      "bottomRow": 44,
+                      "bottomRow": 41,
                       "parentRowSpace": 10,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
@@ -1970,7 +1878,7 @@
                           "widgetName": "Canvas5",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 390,
+                          "bottomRow": 360,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -1981,62 +1889,10 @@
                           "dynamicBindingPathList": [],
                           "children": [
                             {
-                              "widgetName": "Text2",
-                              "displayName": "Text",
-                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                              "searchTags": [
-                                "typography",
-                                "paragraph",
-                                "label"
-                              ],
-                              "topRow": 1,
-                              "bottomRow": 5,
-                              "type": "TEXT_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "overflow": "NONE",
-                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                              "leftColumn": 1.5,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "truncateButtonColor"
-                                },
-                                {
-                                  "key": "fontFamily"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "shouldTruncate": false,
-                              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "Form",
-                              "key": "nty7w27azw",
-                              "isDeprecated": false,
-                              "rightColumn": 25.5,
-                              "textAlign": "LEFT",
-                              "dynamicHeight": "AUTO_HEIGHT",
-                              "widgetId": "u6zckfocyn",
-                              "minWidth": 450,
-                              "isVisible": true,
-                              "fontStyle": "BOLD",
-                              "textColor": "#231F20",
-                              "version": 1,
-                              "parentId": "howid1qndn",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "responsiveBehavior": "fill",
-                              "originalTopRow": 1,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "maxDynamicHeight": 9000,
-                              "originalBottomRow": 7,
-                              "fontSize": "1.25rem",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "resetFormOnClick": true,
+                              "resetFormOnClick": false,
                               "boxShadow": "none",
-                              "widgetName": "Button4",
+                              "widgetName": "Edit_Order_Submit",
+                              "onClick": "{{Update_Order.run()}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -2044,12 +1900,17 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 33,
-                              "bottomRow": 37,
+                              "topRow": 30,
+                              "bottomRow": 34,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "animateLoading": true,
-                              "leftColumn": 46,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "leftColumn": 34,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -2058,11 +1919,11 @@
                                   "key": "borderRadius"
                                 }
                               ],
-                              "text": "Submit",
+                              "text": "Edit Order",
                               "isDisabled": false,
                               "key": "fveib73jlu",
                               "isDeprecated": false,
-                              "rightColumn": 62,
+                              "rightColumn": 63,
                               "isDefaultClickDisabled": true,
                               "widgetId": "6lzd2d4kpo",
                               "minWidth": 120,
@@ -2079,22 +1940,228 @@
                               "placement": "CENTER"
                             },
                             {
-                              "resetFormOnClick": true,
                               "boxShadow": "none",
-                              "widgetName": "Button5",
+                              "widgetName": "Edit_Order_Id",
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                              "searchTags": [
+                                "form",
+                                "text input",
+                                "number",
+                                "textarea"
+                              ],
+                              "topRow": 2,
+                              "bottomRow": 9,
+                              "parentRowSpace": 10,
+                              "labelWidth": 5,
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET_V2",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 6.0830078125,
+                              "dynamicTriggerPathList": [],
+                              "resetOnSubmit": true,
+                              "leftColumn": 1,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultText"
+                                }
+                              ],
+                              "labelPosition": "Top",
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "isDisabled": false,
+                              "key": "o47ki0xnak",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": false,
+                              "isDeprecated": false,
+                              "rightColumn": 43,
+                              "dynamicHeight": "FIXED",
+                              "widgetId": "3ajoxd9tyq",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "showStepArrows": false,
+                              "minWidth": 450,
+                              "isVisible": true,
+                              "label": "Order Number",
+                              "version": 2,
+                              "parentId": "howid1qndn",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "responsiveBehavior": "fill",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "maxDynamicHeight": 9000,
+                              "iconAlign": "left",
+                              "defaultText": "{{Create_Order.data}}",
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "Edit_Order_Cust_Id",
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                              "searchTags": [
+                                "form",
+                                "text input",
+                                "number",
+                                "textarea"
+                              ],
+                              "topRow": 11,
+                              "bottomRow": 18,
+                              "parentRowSpace": 10,
+                              "labelWidth": 5,
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET_V2",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 6.0830078125,
+                              "dynamicTriggerPathList": [],
+                              "resetOnSubmit": true,
+                              "leftColumn": 1,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultText"
+                                }
+                              ],
+                              "labelPosition": "Top",
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "isDisabled": false,
+                              "key": "o47ki0xnak",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": false,
+                              "isDeprecated": false,
+                              "rightColumn": 42,
+                              "dynamicHeight": "FIXED",
+                              "widgetId": "u670koepc4",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "showStepArrows": false,
+                              "minWidth": 450,
+                              "isVisible": true,
+                              "label": "Customer Id",
+                              "version": 2,
+                              "parentId": "howid1qndn",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "responsiveBehavior": "fill",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "maxDynamicHeight": 9000,
+                              "iconAlign": "left",
+                              "defaultText": "{{Get_Order_Cust.data}}",
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "iconSVG": "/static/media/icon.f312efcb48ce4dafb08c20291635b30b.svg",
+                              "topRow": 20,
+                              "defaultCurrencyCode": "USD",
+                              "labelWidth": 5,
+                              "type": "CURRENCY_INPUT_WIDGET",
+                              "animateLoading": true,
+                              "resetOnSubmit": true,
+                              "leftColumn": 1,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultText"
+                                }
+                              ],
+                              "labelStyle": "",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "dynamicHeight": "FIXED",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "showStepArrows": false,
+                              "isVisible": true,
+                              "allowCurrencyChange": false,
+                              "version": 1,
+                              "onFocus": "",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "widgetName": "Edit_Order_Total_Price",
+                              "displayName": "Currency Input",
+                              "searchTags": [
+                                "amount",
+                                "total"
+                              ],
+                              "bottomRow": 27,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "hideCard": false,
+                              "parentColumnSpace": 6.0830078125,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onFocus"
+                                },
+                                {
+                                  "key": "onBlur"
+                                },
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
+                              "labelPosition": "Top",
+                              "key": "tsr7ctgvfp",
+                              "labelTextSize": "0.875rem",
+                              "onTextChanged": "",
+                              "isDeprecated": false,
+                              "rightColumn": 42,
+                              "widgetId": "4idowmfid4",
+                              "minWidth": 450,
+                              "label": "Total Price",
+                              "parentId": "howid1qndn",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "onBlur": "",
+                              "responsiveBehavior": "fill",
+                              "maxDynamicHeight": 9000,
+                              "decimals": 0,
+                              "iconAlign": "left",
+                              "defaultText": "{{Get_Order_Price.data}}",
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "IconButton2",
+                              "onClick": "{{Get_Order_Cust.run()}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "displayName": "Button",
-                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                              "displayName": "Icon Button",
+                              "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
                               "searchTags": [
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 33,
-                              "bottomRow": 37,
-                              "type": "BUTTON_WIDGET",
+                              "topRow": 14,
+                              "bottomRow": 18,
+                              "parentRowSpace": 10,
+                              "type": "ICON_BUTTON_WIDGET",
                               "hideCard": false,
                               "animateLoading": true,
-                              "leftColumn": 30,
+                              "parentColumnSpace": 6.0830078125,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "leftColumn": 45,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -2103,25 +2170,67 @@
                                   "key": "borderRadius"
                                 }
                               ],
-                              "text": "Reset",
                               "isDisabled": false,
-                              "key": "fveib73jlu",
+                              "key": "veezwcwt1m",
                               "isDeprecated": false,
-                              "rightColumn": 46,
-                              "isDefaultClickDisabled": true,
-                              "widgetId": "5ct2zlqc38",
-                              "minWidth": 120,
+                              "rightColumn": 49,
+                              "iconName": "refresh",
+                              "widgetId": "6e1l8yse9r",
+                              "minWidth": 50,
                               "isVisible": true,
-                              "recaptchaType": "V3",
                               "version": 1,
                               "parentId": "howid1qndn",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "responsiveBehavior": "hug",
-                              "disabledWhenInvalid": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "buttonVariant": "SECONDARY",
-                              "placement": "CENTER"
+                              "buttonVariant": "PRIMARY"
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "IconButton3",
+                              "onClick": "{{Get_Order_Price.run()}}",
+                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "displayName": "Icon Button",
+                              "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+                              "searchTags": [
+                                "click",
+                                "submit"
+                              ],
+                              "topRow": 23,
+                              "bottomRow": 27,
+                              "parentRowSpace": 10,
+                              "type": "ICON_BUTTON_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 6.0830078125,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "leftColumn": 45,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "buttonColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "isDisabled": false,
+                              "key": "veezwcwt1m",
+                              "isDeprecated": false,
+                              "rightColumn": 49,
+                              "iconName": "refresh",
+                              "widgetId": "3shcczx5fr",
+                              "minWidth": 50,
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "howid1qndn",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "buttonVariant": "PRIMARY"
                             }
                           ],
                           "key": "6zpa20vgaq",
@@ -2157,7 +2266,7 @@
                       "originalTopRow": 5,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 44,
+                      "originalBottomRow": 41,
                       "minDynamicHeight": 10
                     }
                   ],
@@ -2178,7 +2287,7 @@
                 }
               ],
               "key": "xgesaczlcb",
-              "height": 540,
+              "height": 430,
               "isDeprecated": false,
               "rightColumn": 57,
               "detachFromLayout": true,
@@ -2216,6 +2325,26 @@
               "pluginType": "API",
               "jsonPathKeys": [
                 "Enter_Employee_Id.text"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Barista Ordering_Get_Order_Cust",
+              "name": "Get_Order_Cust",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "Edit_Order_Id.text"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Barista Ordering_Get_Order_Price",
+              "name": "Get_Order_Price",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "Edit_Order_Id.text"
               ],
               "timeoutInMillisecond": 10000
             }
