@@ -1,4 +1,4 @@
-## This repository contains two pages that interact with the (SpoonerInv Database)<https://github.com/jaredlyon/SpoonerInv>:
+## This repository contains two pages that interact with the [SpoonerInv Database](https://github.com/jaredlyon/SpoonerInv):
 
 ### Barista Page
 TODO: write useme here
