@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Current_Order_Id",
+    "name": "Get_Stock_From_Store",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/b/Order"
+        "url": "web:4000/m/stock/{{Enter_Store_ID.text}}"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Barista Ordering",
+    "pageId": "Stock Dashboard",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,17 +37,23 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "datasourceUrl"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "Enter_Store_ID.text"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Barista Ordering_Current_Order_Id",
+  "id": "Stock Dashboard_Get_Stock_From_Store",
   "deleted": false,
-  "gitSyncId": "643d888dbd3fd606db7e66f5_643da570e2d8fb468b7d5d2c"
+  "gitSyncId": "643dae797e70105b2e3337a0_643df2d67e70105b2e333a39"
 }
