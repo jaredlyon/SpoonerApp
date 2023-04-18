@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 960,
+          "bottomRow": 880,
           "containerStyle": "none",
           "snapRows": 69,
           "parentRowSpace": 1,
@@ -36,7 +36,7 @@
                 "group"
               ],
               "topRow": 32,
-              "bottomRow": 87,
+              "bottomRow": 88,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -58,7 +58,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 550,
+                  "bottomRow": 560,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -1401,7 +1401,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
               "iconAlign": "left",
-              "defaultText": "1",
+              "defaultText": "",
               "minDynamicHeight": 4
             },
             {
@@ -1503,7 +1503,7 @@
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "add_new_order",
-                      "onClick": "{{Create_Order.run()}}",
+                      "onClick": "{{Create_Order.run(() => Get_Order_Cust.run(), () => {})}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -1795,7 +1795,7 @@
                       "buttonVariant": "TERTIARY"
                     },
                     {
-                      "widgetName": "Text1",
+                      "widgetName": "Edit_Order_Label",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                       "searchTags": [
@@ -2150,7 +2150,7 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "IconButton2",
+                              "widgetName": "refresh_customer_id",
                               "onClick": "{{Get_Order_Cust.run()}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "Icon Button",
@@ -2197,7 +2197,7 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "IconButton3",
+                              "widgetName": "refresh_total_price",
                               "onClick": "{{Get_Order_Price.run()}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "Icon Button",
@@ -2316,62 +2316,7 @@
             }
           ]
         },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Barista Ordering_Get_Drinks_From_Order",
-              "name": "Get_Drinks_From_Order",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Order_Id_Input_Delete.text"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Barista Ordering_Get_Ingridents_From_Store",
-              "name": "Get_Ingridents_From_Store",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Enter_Employee_Id.text"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Barista Ordering_Get_Order_Cust",
-              "name": "Get_Order_Cust",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Edit_Order_Id.text"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Barista Ordering_Get_Order_Price",
-              "name": "Get_Order_Price",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Edit_Order_Id.text"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Barista Ordering_Create_Order",
-              "name": "Create_Order",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Add_Order.data"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
+        "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Barista Ordering",
