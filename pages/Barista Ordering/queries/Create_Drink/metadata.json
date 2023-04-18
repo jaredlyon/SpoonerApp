@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Delete_Order",
+    "name": "Create_Drink",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/b/deleteOrder/{{Order_Id_Input_Delete.text}}"
+        "url": "web:4000/b/createDrink"
       },
       "invalids": [],
       "messages": [],
@@ -29,9 +29,9 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "",
+      "body": "{{Add_Drink_To_Order_Form.data}}",
       "bodyFormData": [],
-      "httpMethod": "DELETE",
+      "httpMethod": "POST",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -39,27 +39,27 @@
         }
       ],
       "formData": {
-        "apiContentType": "none"
+        "apiContentType": "application/json"
       }
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "datasourceUrl"
+        "key": "body"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Order_Id_Input_Delete.text"
+      "Add_Drink_To_Order_Form.data"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Barista Ordering_Delete_Order",
+  "id": "Barista Ordering_Create_Drink",
   "deleted": false,
-  "gitSyncId": "643d888dbd3fd606db7e66f5_643da30ae2d8fb468b7d5d28"
+  "gitSyncId": "643d888dbd3fd606db7e66f5_643dc9a97ad5d73d12ca4ef2"
 }

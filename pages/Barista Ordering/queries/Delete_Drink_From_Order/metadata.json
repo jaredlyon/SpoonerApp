@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web::4000/b/DeleteDrink/{{Drinks_In_Order.selectedRow.DrinkID}}"
+        "url": "web:4000/b/deleteDrink/{{Drinks_In_Order.selectedRow.DrinkID}}"
       },
       "invalids": [],
       "messages": [],
