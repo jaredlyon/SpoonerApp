@@ -784,7 +784,7 @@
             },
             {
               "boxShadow": "none",
-              "widgetName": "IconButton1",
+              "widgetName": "refresh_table",
               "onClick": "{{Get_Other_Employees.run()}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Icon Button",
@@ -793,8 +793,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 2,
-              "bottomRow": 6,
+              "topRow": 3,
+              "bottomRow": 7,
               "parentRowSpace": 10,
               "type": "ICON_BUTTON_WIDGET",
               "hideCard": false,
