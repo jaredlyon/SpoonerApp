@@ -7,6 +7,10 @@
     {
       "id": "Barista Ordering",
       "isDefault": true
+    },
+    {
+      "id": "Barista Employees",
+      "isDefault": false
     }
   ],
   "viewMode": false,
