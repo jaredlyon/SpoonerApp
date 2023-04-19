@@ -1888,30 +1888,7 @@
             }
           ]
         },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Stock Dashboard_Get_Employees_From_Store",
-              "name": "Get_Employees_From_Store",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Enter_Store_ID.text"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Stock Dashboard_Get_Stock_From_Store",
-              "name": "Get_Stock_From_Store",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Enter_Store_ID.text"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
+        "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Stock Dashboard",
