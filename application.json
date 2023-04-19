@@ -1,7 +1,7 @@
 {
   "pages": [
     {
-      "id": "Manager Dashboard",
+      "id": "Manager Employees",
       "isDefault": false
     },
     {
@@ -10,6 +10,14 @@
     },
     {
       "id": "Barista Employees",
+      "isDefault": false
+    },
+    {
+      "id": "Manager Stores",
+      "isDefault": false
+    },
+    {
+      "id": "Manager Stocks",
       "isDefault": false
     }
   ],

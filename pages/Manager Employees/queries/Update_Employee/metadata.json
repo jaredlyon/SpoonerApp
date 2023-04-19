@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Update_Stock",
+    "name": "Update_Employee",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/m/updateStock"
+        "url": "web:4000/m/updateEmployee"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Manager Dashboard",
+    "pageId": "Manager Employees",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{Stock_In_Store_Table.selectedRow}}",
+      "body": "{{Employee_In_Store_Table.selectedRow}}",
       "bodyFormData": [],
       "httpMethod": "PUT",
       "selfReferencingDataPaths": [],
@@ -46,20 +46,23 @@
     "dynamicBindingPathList": [
       {
         "key": "body"
+      },
+      {
+        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Stock_In_Store_Table.selectedRow"
+      "Employee_In_Store_Table.selectedRow"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Manager Dashboard_Update_Stock",
+  "id": "Manager Employees_Update_Employee",
   "deleted": false,
-  "gitSyncId": "643d888dbd3fd606db7e66f5_643f479c667de44be88ed277"
+  "gitSyncId": "643d888dbd3fd606db7e66f5_643f3a3c667de44be88ed269"
 }
