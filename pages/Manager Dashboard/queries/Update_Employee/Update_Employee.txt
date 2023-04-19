@@ -1,0 +1,1 @@
+{{Employee_In_Store_Table.selectedRow}}

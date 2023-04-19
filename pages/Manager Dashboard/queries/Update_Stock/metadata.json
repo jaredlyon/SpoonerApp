@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Delete_Order",
+    "name": "Update_Stock",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/b/deleteOrder/{{Order_Id_Input_Delete.text}}"
+        "url": "web:4000/m/updateStock"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Barista Ordering",
+    "pageId": "Manager Dashboard",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,9 +29,9 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "",
+      "body": "{{Stock_In_Store_Table.selectedRow}}",
       "bodyFormData": [],
-      "httpMethod": "DELETE",
+      "httpMethod": "PUT",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -45,21 +45,21 @@
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "datasourceUrl"
+        "key": "body"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Order_Id_Input_Delete.text"
+      "Stock_In_Store_Table.selectedRow"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Barista Ordering_Delete_Order",
+  "id": "Manager Dashboard_Update_Stock",
   "deleted": false,
-  "gitSyncId": "643d888dbd3fd606db7e66f5_643da30ae2d8fb468b7d5d28"
+  "gitSyncId": "643d888dbd3fd606db7e66f5_643f479c667de44be88ed277"
 }

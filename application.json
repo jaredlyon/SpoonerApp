@@ -1,16 +1,12 @@
 {
   "pages": [
     {
-      "id": "Customer Ordering",
-      "isDefault": true
-    },
-    {
-      "id": "Stock Dashboard",
+      "id": "Manager Dashboard",
       "isDefault": false
     },
     {
       "id": "Barista Ordering",
-      "isDefault": false
+      "isDefault": true
     }
   ],
   "viewMode": false,
