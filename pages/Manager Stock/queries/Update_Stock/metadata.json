@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Fire_Employee_From_Store",
+    "name": "Update_Stock",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/m/fireEmployee/{{Employee_In_Store_Table.selectedRow.employee_id}}"
+        "url": "web:4000/m/updateStock"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Manager Dashboard",
+    "pageId": "Manager Stock",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,9 +29,9 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "",
+      "body": "{{Stock_In_Store_Table.selectedRow}}",
       "bodyFormData": [],
-      "httpMethod": "DELETE",
+      "httpMethod": "PUT",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -45,21 +45,21 @@
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "datasourceUrl"
+        "key": "body"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Employee_In_Store_Table.selectedRow.employee_id"
+      "Stock_In_Store_Table.selectedRow"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Manager Dashboard_Fire_Employee_From_Store",
+  "id": "Manager Stock_Update_Stock",
   "deleted": false,
-  "gitSyncId": "643d888dbd3fd606db7e66f5_643f4185667de44be88ed271"
+  "gitSyncId": "643d888dbd3fd606db7e66f5_643f479c667de44be88ed277"
 }

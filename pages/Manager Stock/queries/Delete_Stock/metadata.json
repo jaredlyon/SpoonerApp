@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Manager Dashboard",
+    "pageId": "Manager Stock",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -59,7 +59,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Manager Dashboard_Delete_Stock",
+  "id": "Manager Stock_Delete_Stock",
   "deleted": false,
   "gitSyncId": "643d888dbd3fd606db7e66f5_643f5b50667de44be88ed2a7"
 }
