@@ -875,7 +875,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1681782558102,
+                      "columnUpdatedAt": 1681863360827,
                       "originalBottomRow": 47,
                       "primaryColumnId": "DrinkID",
                       "defaultSelectedRowIndices": [
@@ -937,8 +937,8 @@
                           "enableSort": true,
                           "isVisible": true,
                           "isDisabled": false,
-                          "isCellEditable": true,
-                          "isEditable": true,
+                          "isCellEditable": false,
+                          "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "Price",
