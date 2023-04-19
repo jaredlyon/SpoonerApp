@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Manager Region",
-    "slug": "manager-region",
+    "name": "Manager Stores",
+    "slug": "manager-stores",
     "layouts": [
       {
         "viewMode": false,
@@ -425,7 +425,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Manager Region_Get_Stores_From_Region",
+              "id": "Manager Stores_Get_Stores_From_Region",
               "name": "Get_Stores_From_Region",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -438,7 +438,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Manager Region",
+        "id": "Manager Stores",
         "deleted": false,
         "policies": [],
         "userPermissions": []

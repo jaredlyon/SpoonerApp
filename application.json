@@ -13,11 +13,11 @@
       "isDefault": false
     },
     {
-      "id": "Manager Region",
+      "id": "Manager Stores",
       "isDefault": false
     },
     {
-      "id": "Manager Stock",
+      "id": "Manager Stocks",
       "isDefault": false
     }
   ],

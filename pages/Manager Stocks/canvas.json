@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Manager Stock",
-    "slug": "manager-stock",
+    "name": "Manager Stocks",
+    "slug": "manager-stocks",
     "layouts": [
       {
         "viewMode": false,
@@ -612,7 +612,7 @@
         "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Manager Stock",
+        "id": "Manager Stocks",
         "deleted": false,
         "policies": [],
         "userPermissions": []
