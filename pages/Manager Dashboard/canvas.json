@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1730,
+          "bottomRow": 1790,
           "containerStyle": "none",
           "snapRows": 89,
           "parentRowSpace": 1,
@@ -690,7 +690,7 @@
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "Fire_Employee_Button",
-                      "onClick": "{{Fire_Employee_From_Store.run(() => showAlert('Successfully fired employee!','success'), () => showAlert('Error firing employee','error'))}}",
+                      "onClick": "{{Fire_Employee_From_Store.run(() => showAlert('Successfully fired employee!','success'), () => showAlert('Error firing employee.','error'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -1279,7 +1279,7 @@
                 "group"
               ],
               "topRow": 120,
-              "bottomRow": 173,
+              "bottomRow": 179,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -1300,7 +1300,7 @@
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 530,
+                  "bottomRow": 590,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -1310,6 +1310,59 @@
                   "leftColumn": 0,
                   "dynamicBindingPathList": [],
                   "children": [
+                    {
+                      "resetFormOnClick": true,
+                      "boxShadow": "none",
+                      "widgetName": "Delete_Stock_Button",
+                      "onClick": "{{Delete_Stock.run(() => showAlert('Successfully deleted stock item!','success'), () => showAlert('Error deleting stock item.','error'))}}",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 53,
+                      "bottomRow": 57,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 55,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "Delete",
+                      "isDisabled": false,
+                      "key": "1ug3a2n50u",
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "5utzm0h1x7",
+                      "minWidth": 120,
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "lcg13dc6lr",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "responsiveBehavior": "hug",
+                      "originalTopRow": 45,
+                      "disabledWhenInvalid": true,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "originalBottomRow": 49,
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
+                    },
                     {
                       "widgetName": "Text3",
                       "displayName": "Text",
@@ -1417,7 +1470,7 @@
                         }
                       ],
                       "needsHeightForContent": true,
-                      "leftColumn": 0,
+                      "leftColumn": 1,
                       "delimiter": ",",
                       "defaultSelectedRowIndex": 0,
                       "showInlineEditingOptionDropdown": true,
@@ -1679,7 +1732,7 @@
                       "key": "wv29bdjwvi",
                       "canFreezeColumn": true,
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 64,
                       "textSize": "0.875rem",
                       "widgetId": "ie76sltrus",
                       "minWidth": 450,
@@ -1728,7 +1781,7 @@
               "originalTopRow": 120,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 173,
+              "originalBottomRow": 178,
               "minDynamicHeight": 10
             },
             {
@@ -2194,40 +2247,7 @@
             }
           ]
         },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Manager Dashboard_Get_Employees_From_Store",
-              "name": "Get_Employees_From_Store",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Enter_Store_ID.text"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Manager Dashboard_Get_Stock_From_Store",
-              "name": "Get_Stock_From_Store",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Enter_Store_ID.text"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Manager Dashboard_Get_Stores_From_Region",
-              "name": "Get_Stores_From_Region",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "Enter_Region_ID.text"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
+        "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Manager Dashboard",
