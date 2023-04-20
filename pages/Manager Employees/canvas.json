@@ -263,7 +263,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1682009737012,
+                      "columnUpdatedAt": 1682010523730,
                       "originalBottomRow": 44,
                       "defaultSelectedRowIndices": [
                         0
@@ -272,12 +272,12 @@
                       "defaultPageSize": 0,
                       "columnOrder": [
                         "employee_id",
+                        "store_id",
                         "first_name",
                         "last_name",
                         "phone",
                         "email",
-                        "EditActions1",
-                        "store_id"
+                        "EditActions1"
                       ],
                       "dynamicPropertyPathList": [
                         {
