@@ -175,7 +175,7 @@
                       "borderColor": "#E0DEDE",
                       "isVisibleDownload": true,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                      "topRow": 5,
+                      "topRow": 6,
                       "isSortable": true,
                       "type": "TABLE_WIDGET_V2",
                       "inlineEditingSaveOption": "ROW_LEVEL",
@@ -194,9 +194,6 @@
                           "key": "tableData"
                         },
                         {
-                          "key": "primaryColumns.city.computedValue"
-                        },
-                        {
                           "key": "primaryColumns.email.computedValue"
                         },
                         {
@@ -206,28 +203,10 @@
                           "key": "primaryColumns.first_name.computedValue"
                         },
                         {
-                          "key": "primaryColumns.hours.computedValue"
-                        },
-                        {
                           "key": "primaryColumns.last_name.computedValue"
                         },
                         {
-                          "key": "primaryColumns.name.computedValue"
-                        },
-                        {
                           "key": "primaryColumns.phone.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.region_id.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.store_id.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.street.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.zip.computedValue"
                         },
                         {
                           "key": "primaryColumns.EditActions1.saveButtonColor"
@@ -243,6 +222,9 @@
                         },
                         {
                           "key": "primaryColumns.EditActions1.isDiscardDisabled"
+                        },
+                        {
+                          "key": "primaryColumns.store_id.computedValue"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -281,7 +263,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1681929132691,
+                      "columnUpdatedAt": 1682009737012,
                       "originalBottomRow": 44,
                       "defaultSelectedRowIndices": [
                         0
@@ -294,14 +276,8 @@
                         "last_name",
                         "phone",
                         "email",
-                        "store_id",
-                        "name",
-                        "hours",
-                        "region_id",
-                        "city",
-                        "street",
-                        "zip",
-                        "EditActions1"
+                        "EditActions1",
+                        "store_id"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -312,7 +288,7 @@
                         }
                       ],
                       "displayName": "Table",
-                      "bottomRow": 41,
+                      "bottomRow": 42,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 70,
@@ -328,35 +304,6 @@
                       ],
                       "borderWidth": "1",
                       "primaryColumns": {
-                        "city": {
-                          "allowCellWrapping": false,
-                          "index": 0,
-                          "width": 150,
-                          "originalId": "city",
-                          "id": "city",
-                          "alias": "city",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "fontStyle": "",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "City",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{Employee_In_Store_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"city\"]))}}",
-                          "sticky": "",
-                          "validation": {},
-                          "cellBackground": ""
-                        },
                         "email": {
                           "allowCellWrapping": false,
                           "index": 1,
@@ -444,35 +391,6 @@
                           "validation": {},
                           "cellBackground": ""
                         },
-                        "hours": {
-                          "allowCellWrapping": false,
-                          "index": 4,
-                          "width": 150,
-                          "originalId": "hours",
-                          "id": "hours",
-                          "alias": "hours",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "fontStyle": "",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "Hours",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{Employee_In_Store_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"hours\"]))}}",
-                          "sticky": "",
-                          "validation": {},
-                          "cellBackground": ""
-                        },
                         "last_name": {
                           "allowCellWrapping": false,
                           "index": 5,
@@ -502,35 +420,6 @@
                           "validation": {},
                           "cellBackground": ""
                         },
-                        "name": {
-                          "allowCellWrapping": false,
-                          "index": 6,
-                          "width": 150,
-                          "originalId": "name",
-                          "id": "name",
-                          "alias": "name",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "fontStyle": "",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": true,
-                          "isEditable": true,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "Store Name",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{Employee_In_Store_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}",
-                          "sticky": "",
-                          "validation": {},
-                          "cellBackground": ""
-                        },
                         "phone": {
                           "allowCellWrapping": false,
                           "index": 7,
@@ -556,122 +445,6 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Employee_In_Store_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"phone\"]))}}",
-                          "sticky": "",
-                          "validation": {},
-                          "cellBackground": ""
-                        },
-                        "region_id": {
-                          "allowCellWrapping": false,
-                          "index": 8,
-                          "width": 150,
-                          "originalId": "region_id",
-                          "id": "region_id",
-                          "alias": "region_id",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "number",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "fontStyle": "",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "Region ID",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{Employee_In_Store_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"region_id\"]))}}",
-                          "sticky": "",
-                          "validation": {},
-                          "cellBackground": ""
-                        },
-                        "store_id": {
-                          "allowCellWrapping": false,
-                          "index": 9,
-                          "width": 150,
-                          "originalId": "store_id",
-                          "id": "store_id",
-                          "alias": "store_id",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "number",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "fontStyle": "",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": true,
-                          "isEditable": true,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "Store ID",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{Employee_In_Store_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"store_id\"]))}}",
-                          "sticky": "",
-                          "validation": {},
-                          "cellBackground": ""
-                        },
-                        "street": {
-                          "allowCellWrapping": false,
-                          "index": 10,
-                          "width": 150,
-                          "originalId": "street",
-                          "id": "street",
-                          "alias": "street",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "fontStyle": "",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "Street",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{Employee_In_Store_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"street\"]))}}",
-                          "sticky": "",
-                          "validation": {},
-                          "cellBackground": ""
-                        },
-                        "zip": {
-                          "allowCellWrapping": false,
-                          "index": 11,
-                          "width": 150,
-                          "originalId": "zip",
-                          "id": "zip",
-                          "alias": "zip",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "number",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "fontStyle": "",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "Zip",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{Employee_In_Store_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"zip\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -714,6 +487,35 @@
                           "isSaveDisabled": "{{Employee_In_Store_Table.processedTableData.map((currentRow, currentIndex) => ( !Employee_In_Store_Table.updatedRowIndices.includes(currentIndex)))}}",
                           "isDiscardDisabled": "{{Employee_In_Store_Table.processedTableData.map((currentRow, currentIndex) => ( !Employee_In_Store_Table.updatedRowIndices.includes(currentIndex)))}}",
                           "onSave": "{{Update_Employee.run(() => showAlert('Successfully edited employee #' + Employee_In_Store_Table.selectedRow.employee_id + '!','success'), () => showAlert('Must select row to edit.','error'))}}"
+                        },
+                        "store_id": {
+                          "allowCellWrapping": false,
+                          "index": 5,
+                          "width": 150,
+                          "originalId": "store_id",
+                          "id": "store_id",
+                          "alias": "store_id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": true,
+                          "isEditable": true,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "store_id",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Employee_In_Store_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"store_id\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
                         }
                       },
                       "key": "415urhvlub",
